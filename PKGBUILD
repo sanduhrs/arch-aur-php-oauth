@@ -1,8 +1,9 @@
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+# Contributor: Stefan Auditor <stefan.auditor@erdfisch.de>
 
 pkgname=php-oauth
 _extname=oauth
-pkgver=2.0.0
+pkgver=2.0.1
 pkgrel=1
 pkgdesc="PHP extension to provide OAuth consumer and provider bindings."
 arch=("i686" "x86_64")
@@ -30,4 +31,4 @@ package() {
 	install -m0755 -D ".libs/$_extname.so" "$pkgdir$(php-config --extension-dir)/$_extname.so"
 }
 
-sha256sums=('f223a166e82ea51a241c229c5788e19dcafd8a1886ce2b7635cae29cb33c4f0e')
+sha256sums=('fcd6956a64c437af6704eaf0459776513f05cf878ef32cbf5ee09f1a6142fd9a')
